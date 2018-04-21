@@ -78,6 +78,25 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade mid-modal" id="mid-modal" tabindex="0" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="container">
+                        <div class="cart-items">
+                          <div class="cart-items-inner">
+                            <h3>You will recieve the cart items in max: 14 days</h3>
+                            <hr>
+                            <div class="media">
+                                <div class="media-body">
+                                    <div>
+                                        <a href="#" class="btn btn-theme btn-theme-dark" data-dismiss="modal">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
 
             <div class="top-bar">
                 <div class="container">
@@ -143,12 +162,7 @@
                                         <li><a href="product-details.html">Product Page</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="designers.html">Fashion Designers</a>
-                                    <ul>
-                                        <li><a href="designers.html">Portfolio Alternate</a></li>
-                                        <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="designers.html">Fashion Designers</a></li>
                                 <li><a href="category.html">Men</a></li>
                                 <li><a href="category.html">Women</a></li>
                                 <li><a href="category.html">New</a></li>
@@ -232,31 +246,13 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="image"><a class="media-link" href="#"><i class="fa fa-plus"></i><img src="assets/img/preview/shop/order-1.jpg" alt=""/></a></td>
-                                            <td class="quantity">x3</td>
+                                            <td class="image"><a class="media-link" href="#"><i class="fa fa-plus"></i><img src="assets/img/preview/shop/product-6-small.jpeg" alt=""/></a></td>
+                                            <td class="quantity">x1</td>
                                             <td class="description">
                                                 <h4><a href="#">Standard Product Name Header Here</a></h4>
                                                 by Category Name
                                             </td>
-                                            <td class="total">$150 <a href="#"><i class="fa fa-close"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="image"><a class="media-link" href="#"><i class="fa fa-plus"></i><img src="assets/img/preview/shop/order-1.jpg" alt=""/></a></td>
-                                            <td class="quantity">x3</td>
-                                            <td class="description">
-                                                <h4><a href="#">Standard Product Name Header Here</a></h4>
-                                                by Category Name
-                                            </td>
-                                            <td class="total">$250 <a href="#"><i class="fa fa-close"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="image"><a class="media-link" href="#"><i class="fa fa-plus"></i><img src="assets/img/preview/shop/order-1.jpg" alt=""/></a></td>
-                                            <td class="quantity">x3</td>
-                                            <td class="description">
-                                                <h4><a href="#">Standard Product Name Header Here</a></h4>
-                                                by Category Name
-                                            </td>
-                                            <td class="total">$350 <a href="#"><i class="fa fa-close"></i></a></td>
+                                            <td class="total">$450.00 <a href="#"><i class="fa fa-close"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -267,7 +263,7 @@
                                     <table>
                                         <tr>
                                             <td>Sub-total:</td>
-                                            <td>$2,500.00</td>
+                                            <td>$450.00</td>
                                         </tr>
                                         <tr>
                                             <td>Shipping:</td>
@@ -276,7 +272,7 @@
                                         <tfoot>
                                             <tr>
                                                 <td>Total:</td>
-                                                <td>$2,525.00</td>
+                                                <td>$475.00</td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -411,7 +407,7 @@
                         </div>
                         <div class="overflowed">
                             <a class="btn btn-theme btn-theme-dark" href="#">Home Page</a>
-                            <a class="btn btn-theme pull-right" href="#">Place Order</a>
+                            <a data-toggle="modal" data-target="#mid-modal" class="btn btn-theme pull-right" href="#">Place Order</a>
                         </div>
                     </div>
                 </section>

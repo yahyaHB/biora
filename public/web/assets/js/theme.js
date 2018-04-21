@@ -259,29 +259,7 @@ jQuery(document).ready(function () {
         $('#dealCountdown2').countdown({until: austDay});
         $('#dealCountdown3').countdown({until: austDay});
     }
-    if (typeof google === 'object' && typeof google.maps === 'object') {
-        if ($('#map-canvas').length) {
-            var map;
-            var marker;
-            var image = 'assets/img/icon-google-map.png'; // marker icon
-            google.maps.event.addDomListener(window, 'load', function () {
-                var mapOptions = {
-                    scrollwheel: false,
-                    zoom: 12,
-                    center: new google.maps.LatLng(40.9807648, 28.9866516) // map coordinates
-                };
 
-                map = new google.maps.Map(document.getElementById('map-canvas'),
-                    mapOptions);
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.0096559,28.9755535), // marker coordinates
-                    map: map,
-                    icon: image,
-                    title: 'Hello World!'
-                });
-            });
-        }
-    }
     if ($.ui) {
         if ($(priceSliderRange).length) {
             $(priceSliderRange).slider({
@@ -398,3 +376,29 @@ jQuery(window).scroll(function () {
         $('.header.fixed').sticky('update');
     }
 });
+
+document.getElementById('addToCartItem', function addToCart() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+})
