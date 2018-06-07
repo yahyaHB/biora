@@ -1960,7 +1960,7 @@ max-width: 100%;
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #23212b;
 }
 @media (min-width: 1200px) {
   .main-slider .dark .caption-title {
@@ -1982,7 +1982,8 @@ max-width: 100%;
   line-height: 46px;
   margin-bottom: 25px;
   overflow: hidden;
-  color: #ffffff;
+  color: #23212b;
+  padding-top: 20px;
 }
 @media (min-width: 1200px) {
   .main-slider .dark .caption-subtitle {
